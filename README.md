@@ -22,7 +22,7 @@ Welcome to the HPP EMS Assignment! This guide will help you set up and start the
 
 ### Step 4: Start Your Assignment
 - Navigate to your Google Drive and find the `HPP_EMS_Assignment` folder. It will be in `My Drive` > `HPP_EMS_Assignment`.
-- Double-click `sizing_exercise_questions.ipynb` to open it in a new Colab tab.
+- Double-click `HPP_EMS_assignment_1.ipynb` or `HPP_EMS_assignment_2.ipynb` to open it in a new Colab tab.
 - You're now ready to begin your assignment! No modifications are needed to start.
 
 Happy coding!
