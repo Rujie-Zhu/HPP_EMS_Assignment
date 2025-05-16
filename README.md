@@ -1,6 +1,6 @@
 # HPP_EMS_Assignment
 
-Welcome to the Sizing HPP Assignment! This guide will help you set up and start the assignment with ease. Please follow the steps below to begin:
+Welcome to the HPP EMS Assignment! This guide will help you set up and start the assignment with ease. Please follow the steps below to begin:
 
 ### Prerequisites
 - A Google account
