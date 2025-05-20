@@ -59,7 +59,7 @@ def ReadData(day_num, exten_num, DI_num, T, PsMax, PwMax, simulation_dict):
     Solar_measurement = Solar_data['Measurement'] * PsMax
     Wind_measurement = Wind_measurement[0:T0:int(4/DI_num)]
     Wind_measurement.index = range(int(T0/(4/DI_num)))
-    Solar_measurement = Wind_measurement[0:T0:int(4/DI_num)]
+    Solar_measurement = Solar_measurement[0:T0:int(4/DI_num)]
     Solar_measurement.index = range(int(T0/(4/DI_num)))
     
     #Solar_measurement.index = range(int(T/DI_num))

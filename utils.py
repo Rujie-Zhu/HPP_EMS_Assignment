@@ -331,7 +331,7 @@ def run_SM(parameter_dict, simulation_dict, EMS, EMStype):
         # BM_dw_price_cleared_settle = BM_dw_price_cleared.squeeze().repeat(SI_num)
         # BM_dw_price_cleared_settle.index = range(T_SI + int(exten_num/SIDI_num))
 
-        SoC_ts.append({'SoC': SoC0}) 
+
        
         
 
@@ -351,7 +351,7 @@ def run_SM(parameter_dict, simulation_dict, EMS, EMStype):
                     
                 E_HPP_RT_t_opt, P_HPP_RT_t_opt, P_dis_RT_t_opt, P_cha_RT_t_opt, SoC_RT_t_opt, RES_RT_cur_t_opt, P_W_RT_t_opt, P_S_RT_t_opt = RTSim(DI, PbMax, PreUp, PreDw, P_grid_limit, SoCmin, SoCmax, Emax, eta_dis, eta_cha, eta_leak,
                                    Wind_measurement, Solar_measurement, SoC0, P_HPP_RT_ref, RT_interval, P_activated_UP_t, P_activated_DW_t, parameter_dict) 
-                SoC0 = SoC_RT_t_opt.iloc[1,0]
+                
                  
                 SoC_ts.append({'SoC': SoC0})
                 P_HPP_RT_ts.append({'RT': P_HPP_RT_t_opt}) 
@@ -365,7 +365,7 @@ def run_SM(parameter_dict, simulation_dict, EMS, EMStype):
 
                 exist_imbalance = exist_imbalance + (P_HPP_RT_t_opt- P_HPP_SM_t_opt.iloc[RT_interval, 0]) * DI
                 residual_imbalance.append({'energy_imbalance': exist_imbalance}) 
-                    
+                SoC0 = SoC_RT_t_opt.iloc[1,0]    
 
 
 
